@@ -29,17 +29,21 @@ header {
     padding: 0; */
 }
 
+.HeaderContainer {
+    margin: 0px 80px;
+}
+
     .Navbar{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
         padding: 8px 0px 16px 0;
     }
         
         .Navbar img {
             display: flex;
             width: 150px;
-            flex-grow: 1;
+            /* flex-grow: 1; */
         }
 
         .Navbar ul {
@@ -47,12 +51,13 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
-            flex: 0 1 700px;
+            flex: 0 0 300px;
             gap: 32px;
-            padding: 0 16px;
+            padding: 0;
+            margin-left: auto;
         }
 
-    .HeaderContainer {
+    .Hero {
         display: flex;
         flex-wrap: wrap-reverse;
         justify-content: space-evenly;
@@ -64,6 +69,7 @@ header {
         .content {
             width: 500px;
             padding: 0 32px;
+            margin-right: auto;
         }
             .content h1 {
                 font-size: 48px;
@@ -101,6 +107,7 @@ header {
             justify-content: center;
             align-items: flex-end;
             padding: 0 32px;
+            margin: 0;
         }
             .avatar p {
                 font-size: 12px;
@@ -134,7 +141,7 @@ main {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        padding: 0 32px;
+        padding: 0 16px;
         /* gap: 16px; */
     }
 
