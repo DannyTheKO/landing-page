@@ -30,20 +30,20 @@ header {
 }
 
 .HeaderContainer {
-    margin: 0px 80px;
+    margin: 0px 10%;
 }
 
     .Navbar{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         padding: 8px 0px 16px 0;
     }
         
         .Navbar img {
             display: flex;
             width: 150px;
-            /* flex-grow: 1; */
+            flex-grow: 1;
         }
 
         .Navbar ul {
@@ -54,7 +54,7 @@ header {
             flex: 0 0 300px;
             gap: 32px;
             padding: 0;
-            margin-left: auto;
+            /* margin-left: auto; */
         }
 
     .Hero {
@@ -67,9 +67,9 @@ header {
     }
 
         .content {
-            width: 500px;
+            max-width: 500px;
             padding: 0 32px;
-            margin-right: auto;
+            /* margin-right: auto; */
         }
             .content h1 {
                 font-size: 48px;
@@ -80,7 +80,7 @@ header {
                 font-size: 18px;
             }
 
-            button {
+            .content button {
                 background-color: #3882f6;
                 padding: 8px 24px;
                 border: none;
@@ -91,11 +91,11 @@ header {
                 cursor: pointer;
             }
 
-            button:hover{
+            .content button:hover{
                 background-color: #002a6e;
             }
 
-            button:active {
+            .content button:active {
                 background-color: #3882f6;
             }
         
@@ -109,20 +109,22 @@ header {
             padding: 0 32px;
             margin: 0;
         }
-            .avatar p {
-                font-size: 12px;
-                color: #a7a7a7;
-            }
-        
+
             .avatar img {
                 border-radius: 15px;
                 width: 250px;
             }
 
+            .avatar p {
+                font-size: 12px;
+                color: #a7a7a7;
+            }
+        
+
 
 /* MAIN */
 main {
-    padding-bottom: 24px;
+    /* padding-bottom: 24px; */
     margin: 0;
 }
 
@@ -133,7 +135,7 @@ main {
         display: flex;
         justify-content: center;
         text-align: center;
-        padding: 16px 32px;
+        padding: 32px;
         margin: 0;
     }
 
@@ -141,8 +143,7 @@ main {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        padding: 0 16px;
-        /* gap: 16px; */
+        padding: 56px 16px;
     }
 
     .CardContainer .left {
@@ -174,3 +175,36 @@ main {
                 border: 3px solid #3882f6;
                 border-radius: 5px;
             }
+    
+    .QuoteContainer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #E5E7EB;
+        padding: 92px 10%;
+    }
+        .QuoteContainer a {
+            color: #1f2937;
+            cursor: pointer;
+        }
+
+        .quote {
+            color: #1f2937;
+            font-size: 36px;
+            padding-bottom: 0px;
+            /* margin-right: auto; */
+        }
+
+        .writer {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            color: #1f2937;
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: auto;
+            /* margin-top: 16px; */
+        }
+    
