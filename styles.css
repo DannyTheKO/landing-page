@@ -127,17 +127,30 @@ main {
     /* padding-bottom: 24px; */
     margin: 0;
 }
+    .background-image-card {
+        background-image: url(./img/Headin_Home.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
 
-    .Main-1 h1 {
-        font-size: 36px;
-        font-weight: bold;
-        color: #1f2937;
+    .title {
         display: flex;
         justify-content: center;
         text-align: center;
         padding: 32px;
-        margin: 0;
+        margin-top: 0;
     }
+
+        .title h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #f9faf8;
+            background-color: rgba(56, 130, 246, 70%);
+            padding: 32px;
+            border-radius: 24px;
+        }
 
     .CardContainer {
         display: flex;
@@ -148,32 +161,52 @@ main {
 
     .CardContainer .left {
         display: flex;
+        align-items: center;
         justify-content: space-around;
-        flex: 0 1 400px;
+        flex: 0 1 500px;
     }
 
     .CardContainer .right {
         display: flex;
+        align-items: center;
         justify-content: space-around;
-        flex: 0 1 400px;
+        flex: 0 1 500px;
     }
     
 
         .CardContainer .info{
             display: flex;
             justify-content: center;
-            align-content: flex-start;
+            align-content: center;
             text-align: center;
             flex-wrap: wrap;
             row-gap: 16px;
             padding-bottom: 24px;
-            width: 125px;
+            width: 175px;
         }
             .CardContainer .frame {
-                width: 125px;
-                height: 125px;
-                border: 3px solid #3882f6;
+                width: 175px;
+                height: 175px;
+                display: flex;
+                justify-items: center;
+                align-items: center;
                 border-radius: 5px;
+                /* border: 3px solid #3882f6; */
+            }
+
+                .frame img {
+                    width: 175px;
+                    height: 175px;
+                    /* border: 3px solid #1f2937; */
+                    border-radius: 5px;
+                }
+            
+            .CardContainer .text {
+                border-radius: 5px;
+                font-weight: bold;
+                padding: 8px;
+                color: #1f2937;
+                background-color: rgba(167, 167, 167, 70%);
             }
     
     .QuoteContainer {
@@ -190,14 +223,14 @@ main {
             cursor: pointer;
         }
 
-        .quote {
+        .quote-line {
             color: #1f2937;
             font-size: 36px;
             padding-bottom: 0px;
             /* margin-right: auto; */
         }
 
-        .writer {
+        .writer-line {
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
@@ -208,3 +241,68 @@ main {
             /* margin-top: 16px; */
         }
     
+.background-image-contactme {
+    background-image: url(./img/Stair_Fellas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+    
+    .ContactMe {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 254px 32px;
+    }
+
+        .ContactMe .background-text {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            flex: 0 1 1000px;
+            gap: 32px;
+            background-color: rgba(56, 130, 246, 60%);
+            border-radius: 10px;
+            padding: 56px;
+
+        }
+
+            .ContactMe .info {
+                color: #E5E7EB;
+                flex: 0 1 500px;
+                
+            }
+
+            .ContactMe button {
+                font-size: 24px;
+                font-weight: 900;
+                color: white;
+                border: white solid 5px;
+                background-color: transparent;
+                padding: 16px 32px;
+                border-radius: 8px;
+            }
+
+            .ContactMe button:hover {
+                color: #1f2937;
+                border: white solid 5px;
+                background-color: white;
+                padding: 16px 32px;
+                border-radius: 8px;
+            }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f9faf8;
+    background-color: #1f2937;
+    padding: 16px 48px;
+}
+
+    .footer p {
+
+    }
