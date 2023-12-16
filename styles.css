@@ -89,10 +89,25 @@ header {
                 font-weight: 900;
                 font-size: 16px;
                 cursor: pointer;
+                transition: 0.2s ease;
             }
 
             .content button:hover{
                 background-color: #002a6e;
+                animation: left 0.2s ease;
+                transform: translate(0, -5px);
+                box-shadow: 5px 5px 20px 10px #3882f6;
+            }
+
+
+            @keyframes left {
+                0% {
+                    transform: translateX(0);
+                }
+                
+                100% {
+                    transform: translateY(-5px);
+                }
             }
 
             .content button:active {
@@ -264,7 +279,7 @@ main {
             flex-wrap: wrap;
             flex: 0 1 1000px;
             gap: 32px;
-            background-color: rgba(56, 130, 246, 60%);
+            background-color: rgba(56, 130, 246, 70%);
             border-radius: 10px;
             padding: 56px;
 
